@@ -1366,11 +1366,11 @@
   <!-- FITUR MODE EDIT LANGSUNG DARI WEBSITE (ADMIN VISUAL)     -->
   <!-- ======================================================== -->
 
-  <!-- 1. Floating Trigger Button (Pojok Kiri Bawah) -->
-  <div id="adminToggleBtn" class="fixed bottom-6 left-6 z-40">
+  <!-- 1. Floating Trigger Button (Pojok Kiri Bawah - Hanya Muncul untuk Admin) -->
+  <div id="adminToggleBtn" class="fixed bottom-6 left-6 z-40 hidden">
     <button onclick="openAdminPinModal()"
-      class="group flex items-center gap-2 bg-stone-900/90 hover:bg-stone-950 text-stone-300 hover:text-white px-4 py-2.5 rounded-full shadow-2xl border border-stone-700/80 hover:border-emerald-500/60 text-xs font-bold backdrop-blur-md transition-all hover:scale-105"
-      title="Klik untuk mengedit tulisan & foto website">
+      class="group flex items-center gap-2 bg-stone-900/95 hover:bg-stone-950 text-stone-300 hover:text-white px-4 py-2.5 rounded-full shadow-2xl border border-emerald-500/50 text-xs font-bold backdrop-blur-md transition-all hover:scale-105"
+      title="Mode Edit Admin">
       <i data-lucide="edit-3" class="w-4 h-4 text-emerald-400 group-hover:rotate-12 transition-transform"></i>
       <span>Mode Edit</span>
     </button>
@@ -1406,7 +1406,14 @@
         <button onclick="exitEditMode()"
           class="inline-flex items-center gap-1.5 bg-stone-800 hover:bg-stone-700 text-stone-300 hover:text-white font-bold text-xs px-3 py-2 rounded-xl border border-stone-700 transition-all">
           <i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i>
-          <span>Selesai</span>
+          <span>Selesai Edit</span>
+        </button>
+
+        <button onclick="lockAndHideAdmin()"
+          class="inline-flex items-center gap-1.5 bg-red-950/80 hover:bg-red-900 text-red-300 hover:text-white font-bold text-xs px-3 py-2 rounded-xl border border-red-800/80 transition-all"
+          title="Kunci dan sembunyikan mode edit dari layar">
+          <i data-lucide="lock" class="w-3.5 h-3.5"></i>
+          <span class="hidden sm:inline">Kunci & Sembunyikan</span>
         </button>
       </div>
     </div>
@@ -1605,6 +1612,7 @@
 
       if (entered === DEFAULT_ADMIN_PIN) {
         sessionStorage.setItem('cv_duta_admin_auth', 'true');
+        localStorage.setItem('cv_duta_admin_unlocked', 'true');
         closeAdminPinModal();
         enterEditMode();
       } else {
@@ -1634,10 +1642,34 @@
       const adminTopBar = document.getElementById('adminTopBar');
       const adminToggleBtn = document.getElementById('adminToggleBtn');
       if (adminTopBar) adminTopBar.classList.add('hidden');
-      if (adminToggleBtn) adminToggleBtn.classList.remove('hidden');
+      
+      // Tombol hanya ditampilkan jika admin sudah membuka kunci di browser ini
+      if (adminToggleBtn) {
+        if (localStorage.getItem('cv_duta_admin_unlocked') === 'true') {
+          adminToggleBtn.classList.remove('hidden');
+        } else {
+          adminToggleBtn.classList.add('hidden');
+        }
+      }
 
       setupEditableElements(false);
       showAdminToast('Mode Edit ditutup.');
+    }
+
+    // Fungsi Kunci & Sembunyikan Mode Edit (Khusus Admin saat ingin Logout)
+    function lockAndHideAdmin() {
+      sessionStorage.removeItem('cv_duta_admin_auth');
+      localStorage.removeItem('cv_duta_admin_unlocked');
+      isEditMode = false;
+      document.body.classList.remove('admin-edit-mode');
+
+      const adminTopBar = document.getElementById('adminTopBar');
+      const adminToggleBtn = document.getElementById('adminToggleBtn');
+      if (adminTopBar) adminTopBar.classList.add('hidden');
+      if (adminToggleBtn) adminToggleBtn.classList.add('hidden');
+
+      setupEditableElements(false);
+      showAdminToast('🔒 Akses admin berhasil dikunci dan tombol disembunyikan dari layar.');
     }
 
     function setupEditableElements(enable) {
@@ -1718,7 +1750,7 @@
       if (adminPinModal) adminPinModal.classList.add('hidden');
       if (adminImgModal) adminImgModal.classList.add('hidden');
       if (adminToast) adminToast.classList.add('hidden');
-      if (adminToggleBtn) adminToggleBtn.classList.remove('hidden');
+      if (adminToggleBtn) adminToggleBtn.classList.add('hidden');
 
       const cleanHtml = "<!DOCTYPE html>\n" + document.documentElement.outerHTML;
 
@@ -1896,6 +1928,54 @@
       if (pinInput) {
         pinInput.addEventListener('keyup', function (e) {
           if (e.key === 'Enter') checkAdminPin();
+        });
+      }
+
+      // 8. Cek Akses Admin Tersembunyi (URL #admin atau localStorage)
+      function checkAdminAccessTrigger() {
+        const hash = window.location.hash.toLowerCase();
+        const search = window.location.search.toLowerCase();
+        const isUrlAdmin = hash === '#admin' || search.includes('admin=true') || search.includes('admin=1');
+        const isDeviceUnlocked = localStorage.getItem('cv_duta_admin_unlocked') === 'true';
+
+        if (isUrlAdmin || isDeviceUnlocked) {
+          const adminToggleBtn = document.getElementById('adminToggleBtn');
+          if (adminToggleBtn) adminToggleBtn.classList.remove('hidden');
+          if (isUrlAdmin && sessionStorage.getItem('cv_duta_admin_auth') !== 'true') {
+            openAdminPinModal();
+          }
+        }
+      }
+      checkAdminAccessTrigger();
+      window.addEventListener('hashchange', checkAdminAccessTrigger);
+
+      // 9. Shortcut Keyboard Rahasia Admin: Tekan Ctrl+Shift+E (Windows) atau Cmd+Shift+E (Mac)
+      document.addEventListener('keydown', function (e) {
+        if ((e.ctrlKey || e.metaKey) && e.shiftKey && (e.key === 'E' || e.key === 'e')) {
+          e.preventDefault();
+          const adminToggleBtn = document.getElementById('adminToggleBtn');
+          if (adminToggleBtn) adminToggleBtn.classList.remove('hidden');
+          openAdminPinModal();
+        }
+      });
+
+      // 10. Trik Rahasia Klik Logo 3x Cepat untuk Buka Admin Modal
+      let logoClickCount = 0;
+      let logoClickTimer = null;
+      const brandLogo = document.querySelector('header a[href="#"]');
+      if (brandLogo) {
+        brandLogo.addEventListener('click', function (e) {
+          logoClickCount++;
+          clearTimeout(logoClickTimer);
+          logoClickTimer = setTimeout(() => { logoClickCount = 0; }, 700);
+
+          if (logoClickCount >= 3) {
+            e.preventDefault();
+            logoClickCount = 0;
+            const adminToggleBtn = document.getElementById('adminToggleBtn');
+            if (adminToggleBtn) adminToggleBtn.classList.remove('hidden');
+            openAdminPinModal();
+          }
         });
       }
     });
