@@ -1,0 +1,1426 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rumput Taman Sukolilo Wajak Malang | CV. Duta Rumput Mandiri</title>
+  <meta name="description"
+    content="Pusat budidaya dan penjualan rumput taman segar CV. Duta Rumput Mandiri langsung dari petani Desa Sukolilo, Wajak, Malang. Melayani Rumput Jepang, Gajah Mini, Golf, dan Manila eceran & proyek.">
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Tailwind Configuration -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          },
+          colors: {
+            emerald: {
+              50: '#ecfdf5',
+              100: '#d1fae5',
+              200: '#a7f3d0',
+              300: '#6ee7b7',
+              400: '#34d399',
+              500: '#10b981',
+              600: '#059669',
+              700: '#047857',
+              800: '#065f46',
+              900: '#064e3b',
+              950: '#022c22',
+            },
+            forest: {
+              800: '#133e2c',
+              900: '#0d281c',
+              950: '#081a12',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Custom subtle patterns and animations */
+    .hero-pattern {
+      background-color: #022c22;
+      background-image: radial-gradient(rgba(16, 185, 129, 0.15) 1px, transparent 0);
+      background-size: 28px 28px;
+    }
+
+    .grass-card-shadow {
+      box-shadow: 0 10px 30px -5px rgba(6, 78, 59, 0.08), 0 4px 6px -2px rgba(6, 78, 59, 0.03);
+    }
+
+    .grass-card-shadow:hover {
+      box-shadow: 0 20px 35px -10px rgba(6, 78, 59, 0.18), 0 8px 10px -4px rgba(6, 78, 59, 0.06);
+    }
+
+    /* Pulse glow for WA */
+    @keyframes pulse-glow {
+
+      0%,
+      100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6);
+      }
+
+      50% {
+        transform: scale(1.04);
+        box-shadow: 0 0 0 14px rgba(37, 211, 102, 0);
+      }
+    }
+
+    .wa-pulse {
+      animation: pulse-glow 2.4s infinite ease-in-out;
+    }
+  </style>
+</head>
+
+<body class="bg-stone-50 text-stone-800 antialiased selection:bg-emerald-500 selection:text-white">
+
+  <!-- ======================================================== -->
+  <!-- 1. TOP BAR & HEADER                                      -->
+  <!-- ======================================================== -->
+
+  <!-- Info Bar Atas -->
+  <div
+    class="bg-emerald-950 text-emerald-100 border-b border-emerald-900/70 text-xs sm:text-sm py-2 px-4 transition-colors">
+    <div
+      class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-1 sm:gap-4 text-center sm:text-left">
+      <div class="flex items-center gap-2 flex-wrap justify-center">
+        <span class="inline-flex items-center gap-1 text-amber-400 font-medium">
+          <i data-lucide="map-pin" class="w-3.5 h-3.5"></i>
+          Kebun Budidaya: Desa Sukolilo (Napel), Wajak, Malang
+        </span>
+        <span class="hidden md:inline text-emerald-600">•</span>
+        <span class="hidden md:inline text-emerald-200">Petani Langsung • Eceran & Partai Proyek</span>
+      </div>
+      <div class="flex items-center gap-3 text-emerald-300 text-xs">
+        <span class="inline-flex items-center gap-1">
+          <i data-lucide="clock" class="w-3.5 h-3.5 text-amber-400"></i>
+          Buka Setiap Hari: 06.00 - 18.00 WIB
+        </span>
+        <span class="text-emerald-700">|</span>
+        <span class="text-emerald-300 font-semibold">Siap Kirim Se-Jawa Timur & Luar Pulau</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation Header -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-stone-200 shadow-sm transition-all">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+
+        <!-- Logo / Brand -->
+        <a href="#" class="flex items-center gap-3 group">
+          <div
+            class="w-11 h-11 rounded-2xl bg-gradient-to-tr from-emerald-800 to-emerald-600 flex items-center justify-center text-white shadow-md shadow-emerald-700/20 group-hover:scale-105 transition-transform">
+            <i data-lucide="sprout" class="w-6 h-6 text-emerald-200"></i>
+          </div>
+          <div>
+            <div class="flex items-center gap-1.5">
+              <span class="text-xl font-extrabold text-stone-900 tracking-tight">DutaRumput<span
+                  class="text-emerald-600">Mandiri</span></span>
+            </div>
+            <p class="text-[11px] text-stone-500 font-semibold tracking-wide flex items-center gap-1">
+              <span class="w-2 h-2 rounded-full bg-emerald-500 inline-block animate-ping"></span>
+              CV. Duta Rumput Mandiri • Sukolilo Wajak
+            </p>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden md:flex items-center gap-7 text-sm font-semibold text-stone-600">
+          <a href="#katalog" class="hover:text-emerald-600 transition-colors py-1">Katalog Produk</a>
+          <a href="#profil" class="hover:text-emerald-600 transition-colors py-1">Profil CV</a>
+          <a href="#keunggulan" class="hover:text-emerald-600 transition-colors py-1">Keunggulan Petani</a>
+          <a href="#proses" class="hover:text-emerald-600 transition-colors py-1">Cara Pesan</a>
+          <a href="#kontak" class="hover:text-emerald-600 transition-colors py-1">Kontak & Lokasi</a>
+        </nav>
+
+        <!-- CTA Header Button (Desktop) -->
+        <div class="hidden md:flex items-center gap-3">
+          <a href="javascript:void(0)" onclick="hubungiWaGeneral()"
+            class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-bold px-5 py-2.5 rounded-full shadow-lg shadow-emerald-600/20 hover:shadow-emerald-600/35 transition-all transform hover:-translate-y-0.5">
+            <i data-lucide="message-circle" class="w-4 h-4"></i>
+            <span>Konsultasi WA</span>
+          </a>
+        </div>
+
+        <!-- Mobile Menu Toggle Button -->
+        <div class="flex md:hidden">
+          <button id="mobileMenuBtn" type="button"
+            class="p-2.5 rounded-xl text-stone-600 hover:text-emerald-700 hover:bg-emerald-50 transition-colors focus:outline-none"
+            aria-label="Buka Menu">
+            <i data-lucide="menu" id="menuIconOpen" class="w-6 h-6"></i>
+            <i data-lucide="x" id="menuIconClose" class="w-6 h-6 hidden"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobileMenu" class="hidden md:hidden border-t border-stone-200 bg-white px-4 pt-3 pb-6 space-y-3 shadow-xl">
+      <a href="#katalog"
+        class="mobile-nav-link block px-3 py-2.5 rounded-lg text-base font-semibold text-stone-800 hover:bg-emerald-50 hover:text-emerald-700">Katalog
+        Produk</a>
+      <a href="#profil"
+        class="mobile-nav-link block px-3 py-2.5 rounded-lg text-base font-semibold text-stone-800 hover:bg-emerald-50 hover:text-emerald-700">Profil
+        CV. DUTA RUMPUT MANDIRI</a>
+      <a href="#keunggulan"
+        class="mobile-nav-link block px-3 py-2.5 rounded-lg text-base font-semibold text-stone-800 hover:bg-emerald-50 hover:text-emerald-700">Keunggulan
+        Petani</a>
+      <a href="#proses"
+        class="mobile-nav-link block px-3 py-2.5 rounded-lg text-base font-semibold text-stone-800 hover:bg-emerald-50 hover:text-emerald-700">Cara
+        Pesan & Pengiriman</a>
+      <a href="#kontak"
+        class="mobile-nav-link block px-3 py-2.5 rounded-lg text-base font-semibold text-stone-800 hover:bg-emerald-50 hover:text-emerald-700">Kontak
+        & Lokasi Kebun</a>
+      <div class="pt-2">
+        <button onclick="hubungiWaGeneral()"
+          class="w-full flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 px-4 rounded-xl shadow-md">
+          <i data-lucide="message-circle" class="w-5 h-5"></i>
+          <span>Konsultasi WA Langsung</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- ======================================================== -->
+  <!-- 2. HERO SECTION                                          -->
+  <!-- ======================================================== -->
+  <section class="relative hero-pattern text-white overflow-hidden py-16 sm:py-24 lg:py-28">
+    <!-- Decorative Glow Circles -->
+    <div class="absolute -top-32 -left-32 w-96 h-96 bg-emerald-500/20 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute top-1/2 -right-32 w-96 h-96 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+
+        <!-- Left Hero Content -->
+        <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+
+          <!-- Pill Tag -->
+          <div
+            class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-900/90 border border-emerald-500/40 text-emerald-300 text-xs sm:text-sm font-semibold shadow-inner">
+            <span class="w-2 h-2 rounded-full bg-amber-400"></span>
+            <span>Langsung Dari Petani Sukolilo Wajak</span>
+            <span
+              class="bg-amber-500/20 text-amber-300 text-[10px] px-2 py-0.5 rounded-full uppercase tracking-wider font-bold">Harga
+              Kebun</span>
+          </div>
+
+          <!-- Main Headline -->
+          <h1
+            class="text-3xl sm:text-5xl lg:text-5xl font-extrabold tracking-tight leading-tight sm:leading-[1.18] text-white">
+            Suplai Rumput Hias Segar & <span
+              class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-300 via-emerald-400 to-amber-300">Jasa
+              Pasang Taman</span> Profesional
+          </h1>
+
+          <!-- Sub-headline -->
+          <p class="text-base sm:text-lg text-emerald-100/90 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-normal">
+            Rumput segar kualitas unggul, <strong class="text-white font-semibold">baru dipanen & disodet dari lahan
+              saat ada pesanan</strong>. Akar kuat, lempengan tanah tebal, bebas penyakit, dan siap kirim ke seluruh
+            Jawa Timur hingga luar pulau untuk eceran rumah atau partai proyek.
+          </p>
+
+          <!-- 2 Action Buttons -->
+          <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+            <a href="#katalog"
+              class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 text-white font-bold px-7 py-3.5 rounded-xl shadow-xl shadow-emerald-900/40 hover:shadow-emerald-900/60 transition-all transform hover:-translate-y-0.5">
+              <span>Lihat Pilihan Rumput</span>
+              <i data-lucide="arrow-down-circle" class="w-5 h-5"></i>
+            </a>
+
+            <a href="javascript:void(0)" onclick="hubungiWaGeneral()"
+              class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 bg-stone-900/80 hover:bg-stone-800 text-emerald-200 border border-emerald-500/40 font-bold px-6 py-3.5 rounded-xl transition-all hover:border-emerald-400">
+              <i data-lucide="message-circle" class="w-5 h-5 text-emerald-400"></i>
+              <span>Konsultasi WhatsApp</span>
+            </a>
+          </div>
+
+          <!-- Trust Badges List -->
+          <div class="pt-6 border-t border-emerald-800/60 grid grid-cols-3 gap-2 sm:gap-4 text-center">
+            <div class="p-2 sm:p-3 rounded-xl bg-emerald-900/40 border border-emerald-800/40">
+              <div class="text-emerald-400 font-bold text-lg sm:text-xl flex items-center justify-center gap-1">
+                <i data-lucide="sparkles" class="w-4 h-4 text-amber-400"></i> 100%
+              </div>
+              <div class="text-[11px] sm:text-xs text-emerald-200/80 font-medium">Segar Baru Disodet</div>
+            </div>
+            <div class="p-2 sm:p-3 rounded-xl bg-emerald-900/40 border border-emerald-800/40">
+              <div class="text-emerald-400 font-bold text-lg sm:text-xl flex items-center justify-center gap-1">
+                <i data-lucide="shield-check" class="w-4 h-4 text-emerald-300"></i> Petani
+              </div>
+              <div class="text-[11px] sm:text-xs text-emerald-200/80 font-medium">Tanpa Perantara</div>
+            </div>
+            <div class="p-2 sm:p-3 rounded-xl bg-emerald-900/40 border border-emerald-800/40">
+              <div class="text-emerald-400 font-bold text-lg sm:text-xl flex items-center justify-center gap-1">
+                <i data-lucide="truck" class="w-4 h-4 text-amber-400"></i> Siap
+              </div>
+              <div class="text-[11px] sm:text-xs text-emerald-200/80 font-medium">Kirim Seluruh Area</div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Hero Visual Card -->
+        <div class="lg:col-span-5 relative">
+          <div class="relative mx-auto max-w-md lg:max-w-none">
+            <!-- Decorative Backing -->
+            <div
+              class="absolute -inset-1.5 bg-gradient-to-tr from-amber-400 to-emerald-500 rounded-3xl blur-md opacity-30">
+            </div>
+
+            <div class="relative rounded-3xl overflow-hidden border border-emerald-600/40 bg-emerald-950 shadow-2xl">
+              <img src="https://images.unsplash.com/photo-1592417817098-8f3d6eb22509?auto=format&fit=crop&w=1000&q=80"
+                alt="Kebun Rumput Taman Sukolilo Wajak Malang"
+                class="w-full h-80 sm:h-96 object-cover object-center transform hover:scale-105 transition-transform duration-700"
+                loading="eager" />
+
+              <!-- Gradient Overlay on Image -->
+              <div class="absolute inset-0 bg-gradient-to-t from-emerald-950 via-emerald-950/20 to-transparent"></div>
+
+              <!-- Floating Pill on Image -->
+              <div
+                class="absolute top-4 left-4 bg-emerald-900/90 backdrop-blur-md border border-emerald-500/50 text-white text-xs font-semibold px-3 py-1.5 rounded-full flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                <span>Sentra Pembibitan Desa Sukolilo</span>
+              </div>
+
+              <!-- Bottom Card Caption -->
+              <div
+                class="absolute bottom-4 left-4 right-4 bg-stone-900/90 backdrop-blur-md rounded-2xl p-4 border border-emerald-500/30 text-white">
+                <div class="flex items-center justify-between">
+                  <div>
+                    <h4 class="text-sm font-bold text-emerald-200">Kepadatan & Ketebalan Terjamin</h4>
+                    <p class="text-xs text-stone-300">Lempengan rumput utuh, tanah humus subur akar kuat.</p>
+                  </div>
+                  <div
+                    class="bg-amber-500 text-stone-950 font-extrabold text-xs px-2.5 py-1.5 rounded-lg flex items-center gap-1 shadow">
+                    <i data-lucide="check" class="w-3.5 h-3.5 stroke-[3]"></i> Grade A
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ======================================================== -->
+  <!-- 3. KATALOG PRODUK RUMPUT                                  -->
+  <!-- ======================================================== -->
+  <section id="katalog" class="py-20 bg-stone-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+        <div
+          class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold uppercase tracking-wider">
+          <i data-lucide="layers" class="w-3.5 h-3.5"></i>
+          Pilihan Varietas Unggulan
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-stone-900 tracking-tight">
+          Katalog Rumput Taman Berkualitas Super
+        </h2>
+        <p class="text-stone-600 text-base leading-relaxed">
+          Semua varietas dirawat intensif di lahan subur Sukolilo Wajak, siap dipanen dalam bentuk lempengan/ikatan
+          sodetan segar siap pasang di lokasi Anda.
+        </p>
+      </div>
+
+      <!-- Product Cards Grid (4 Varietas Utama) -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7">
+
+        <!-- CARD 1: Rumput Jepang / Peking -->
+        <div
+          class="bg-white rounded-3xl overflow-hidden border border-stone-200 grass-card-shadow flex flex-col transition-all duration-300 hover:-translate-y-1">
+          <!-- Image & Badges -->
+          <div class="relative h-56 overflow-hidden bg-stone-200">
+            <img src="https://images.unsplash.com/photo-1584467541268-b040f83be3fd?auto=format&fit=crop&w=700&q=80"
+              alt="Rumput Jepang Peking Sukolilo Malang"
+              class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500"
+              loading="lazy" />
+            <!-- Badge Best Seller -->
+            <div
+              class="absolute top-3 left-3 bg-gradient-to-r from-amber-500 to-amber-600 text-white font-extrabold text-xs px-3 py-1.5 rounded-full shadow-md flex items-center gap-1.5">
+              <i data-lucide="award" class="w-3.5 h-3.5"></i>
+              <span>Best Seller</span>
+            </div>
+            <!-- Format Sodet Tag -->
+            <div
+              class="absolute bottom-3 right-3 bg-stone-900/80 backdrop-blur-sm text-stone-100 text-[11px] font-semibold px-2.5 py-1 rounded-md">
+              Sodet Lempeng 1m²
+            </div>
+          </div>
+
+          <!-- Card Content -->
+          <div class="p-6 flex-1 flex flex-col justify-between space-y-5">
+            <div>
+              <div class="flex items-baseline justify-between mb-1">
+                <h3 class="text-xl font-bold text-stone-900">Rumput Jepang</h3>
+                <span class="text-xs text-emerald-700 font-semibold bg-emerald-50 px-2 py-0.5 rounded-md">Peking</span>
+              </div>
+              <p class="text-xs text-stone-500 italic mb-3">Zoysia japonica</p>
+              <p class="text-xs text-stone-600 leading-relaxed">
+                Helai daun runcing halus, warna hijau cerah merata, dan susunan daun sangat rapat layaknya permadani
+                mewah.
+              </p>
+
+              <!-- Fitur & Kebutuhan Cahaya -->
+              <div class="mt-4 space-y-2 border-t border-stone-100 pt-3">
+                <div class="flex items-center justify-between text-xs">
+                  <span class="text-stone-500 flex items-center gap-1.5">
+                    <i data-lucide="sun" class="w-3.5 h-3.5 text-amber-500"></i> Sinar Matahari:
+                  </span>
+                  <span class="font-bold text-stone-800 bg-amber-50 text-amber-800 px-2 py-0.5 rounded">Full Sun
+                    (100%)</span>
+                </div>
+                <div class="flex items-center justify-between text-xs">
+                  <span class="text-stone-500 flex items-center gap-1.5">
+                    <i data-lucide="scissors" class="w-3.5 h-3.5 text-emerald-600"></i> Pemangkasan:
+                  </span>
+                  <span class="font-semibold text-stone-700">1x Sebulan</span>
+                </div>
+                <div class="flex items-center justify-between text-xs">
+                  <span class="text-stone-500 flex items-center gap-1.5">
+                    <i data-lucide="home" class="w-3.5 h-3.5 text-emerald-600"></i> Cocok Untuk:
+                  </span>
+                  <span class="font-semibold text-stone-700">Taman Depan & Halaman Villa</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Action Button -->
+            <div class="pt-2">
+              <button onclick="pesanProduk('Rumput Jepang / Peking')"
+                class="w-full inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white text-xs sm:text-sm font-bold py-3 px-4 rounded-xl shadow-md shadow-emerald-600/20 hover:shadow-emerald-600/35 transition-all">
+                <i data-lucide="message-circle" class="w-4 h-4"></i>
+                <span>Pesan Rumput Ini via WA</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 2: Rumput Gajah Mini -->
+        <div
+          class="bg-white rounded-3xl overflow-hidden border border-stone-200 grass-card-shadow flex flex-col transition-all duration-300 hover:-translate-y-1">
+          <!-- Image & Badges -->
+          <div class="relative h-56 overflow-hidden bg-stone-200">
+            <img src="https://images.unsplash.com/photo-1533460004989-acf295ce70ff?auto=format&fit=crop&w=700&q=80"
+              alt="Rumput Gajah Mini Sukolilo Malang"
+              class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500"
+              loading="lazy" />
+            <!-- Badge Tahan Banting -->
+            <div
+              class="absolute top-3 left-3 bg-gradient-to-r from-emerald-600 to-emerald-700 text-white font-extrabold text-xs px-3 py-1.5 rounded-full shadow-md flex items-center gap-1.5">
+              <i data-lucide="shield-check" class="w-3.5 h-3.5"></i>
+              <span>Paling Tahan Banting</span>
+            </div>
+            <!-- Format Sodet Tag -->
+            <div
+              class="absolute bottom-3 right-3 bg-stone-900/80 backdrop-blur-sm text-stone-100 text-[11px] font-semibold px-2.5 py-1 rounded-md">
+              Sodet Lempeng 1m²
+            </div>
+          </div>
+
+          <!-- Card Content -->
+          <div class="p-6 flex-1 flex flex-col justify-between space-y-5">
+            <div>
+              <div class="flex items-baseline justify-between mb-1">
+                <h3 class="text-xl font-bold text-stone-900">Gajah Mini</h3>
+                <span class="text-xs text-emerald-700 font-semibold bg-emerald-50 px-2 py-0.5 rounded-md">Favorit
+                  Rumah</span>
+              </div>
+              <p class="text-xs text-stone-500 italic mb-3">Pennisetum purpureum schamach</p>
+              <p class="text-xs text-stone-600 leading-relaxed">
+                Daun pipih membulat warna hijau tua pekat. Pola pertumbuhan merambat ke samping, tidak cepat tinggi dan
+                sangat hemat perawatan.
+              </p>
+
+              <!-- Fitur & Kebutuhan Cahaya -->
+              <div class="mt-4 space-y-2 border-t border-stone-100 pt-3">
+                <div class="flex items-center justify-between text-xs">
+                  <span class="text-stone-500 flex items-center gap-1.5">
+                    <i data-lucide="cloud-sun" class="w-3.5 h-3.5 text-emerald-600"></i> Sinar Matahari:
+                  </span>
+                  <span class="font-bold text-stone-800 bg-emerald-50 text-emerald-800 px-2 py-0.5 rounded">Tahan
+                    Semi-Shade (50%)</span>
+                </div>
+                <div class="flex items-center justify-between text-xs">
+                  <span class="text-stone-500 flex items-center gap-1.5">
+                    <i data-lucide="scissors" class="w-3.5 h-3.5 text-emerald-600"></i> Pemangkasan:
+                  </span>
+                  <span class="font-semibold text-stone-700">Minim (Jarang Potong)</span>
+                </div>
+                <div class="flex items-center justify-between text-xs">
+                  <span class="text-stone-500 flex items-center gap-1.5">
+                    <i data-lucide="home" class="w-3.5 h-3.5 text-emerald-600"></i> Cocok Untuk:
+                  </span>
+                  <span class="font-semibold text-stone-700">Halaman Teduh & Minimalis</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Action Button -->
+            <div class="pt-2">
+              <button onclick="pesanProduk('Rumput Gajah Mini')"
+                class="w-full inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white text-xs sm:text-sm font-bold py-3 px-4 rounded-xl shadow-md shadow-emerald-600/20 hover:shadow-emerald-600/35 transition-all">
+                <i data-lucide="message-circle" class="w-4 h-4"></i>
+                <span>Pesan Rumput Ini via WA</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 3: Rumput Golf / Babat -->
+        <div
+          class="bg-white rounded-3xl overflow-hidden border border-stone-200 grass-card-shadow flex flex-col transition-all duration-300 hover:-translate-y-1">
+          <!-- Image & Badges -->
+          <div class="relative h-56 overflow-hidden bg-stone-200">
+            <img src="https://images.unsplash.com/photo-1587174486073-ae5e5cff23aa?auto=format&fit=crop&w=700&q=80"
+              alt="Rumput Golf Babat Sukolilo Malang"
+              class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500"
+              loading="lazy" />
+            <!-- Badge Premium -->
+            <div
+              class="absolute top-3 left-3 bg-gradient-to-r from-amber-500 to-yellow-600 text-white font-extrabold text-xs px-3 py-1.5 rounded-full shadow-md flex items-center gap-1.5">
+              <i data-lucide="crown" class="w-3.5 h-3.5"></i>
+              <span>Kelas Premium</span>
+            </div>
+            <!-- Format Sodet Tag -->
+            <div
+              class="absolute bottom-3 right-3 bg-stone-900/80 backdrop-blur-sm text-stone-100 text-[11px] font-semibold px-2.5 py-1 rounded-md">
+              Sodet Lempeng 1m²
+            </div>
+          </div>
+
+          <!-- Card Content -->
+          <div class="p-6 flex-1 flex flex-col justify-between space-y-5">
+            <div>
+              <div class="flex items-baseline justify-between mb-1">
+                <h3 class="text-xl font-bold text-stone-900">Rumput Golf</h3>
+                <span class="text-xs text-amber-700 font-semibold bg-amber-50 px-2 py-0.5 rounded-md">Babat Super</span>
+              </div>
+              <p class="text-xs text-stone-500 italic mb-3">Cynodon dactylon / Bermuda</p>
+              <p class="text-xs text-stone-600 leading-relaxed">
+                Tekstur super lembut dan helai sangat pendek rapat. Menghasilkan hamparan rumput mulus seperti karpet
+                lapangan golf atau resort mewah.
+              </p>
+
+              <!-- Fitur & Kebutuhan Cahaya -->
+              <div class="mt-4 space-y-2 border-t border-stone-100 pt-3">
+                <div class="flex items-center justify-between text-xs">
+                  <span class="text-stone-500 flex items-center gap-1.5">
+                    <i data-lucide="sun" class="w-3.5 h-3.5 text-amber-500"></i> Sinar Matahari:
+                  </span>
+                  <span class="font-bold text-stone-800 bg-amber-50 text-amber-800 px-2 py-0.5 rounded">Full Sun
+                    Intensif</span>
+                </div>
+                <div class="flex items-center justify-between text-xs">
+                  <span class="text-stone-500 flex items-center gap-1.5">
+                    <i data-lucide="scissors" class="w-3.5 h-3.5 text-emerald-600"></i> Pemangkasan:
+                  </span>
+                  <span class="font-semibold text-stone-700">Rutin 2 Minggu Sekali</span>
+                </div>
+                <div class="flex items-center justify-between text-xs">
+                  <span class="text-stone-500 flex items-center gap-1.5">
+                    <i data-lucide="home" class="w-3.5 h-3.5 text-emerald-600"></i> Cocok Untuk:
+                  </span>
+                  <span class="font-semibold text-stone-700">Halaman Villa & Putting Green</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Action Button -->
+            <div class="pt-2">
+              <button onclick="pesanProduk('Rumput Golf / Babat')"
+                class="w-full inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white text-xs sm:text-sm font-bold py-3 px-4 rounded-xl shadow-md shadow-emerald-600/20 hover:shadow-emerald-600/35 transition-all">
+                <i data-lucide="message-circle" class="w-4 h-4"></i>
+                <span>Pesan Rumput Ini via WA</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 4: Rumput Manila / Zoysia Matrella -->
+        <div
+          class="bg-white rounded-3xl overflow-hidden border border-stone-200 grass-card-shadow flex flex-col justify-between transition-all duration-300 hover:-translate-y-1">
+          <!-- Image & Badges -->
+          <div class="relative h-56 overflow-hidden bg-stone-200">
+            <img src="https://images.unsplash.com/photo-1529963183134-61a90db47eaf?auto=format&fit=crop&w=700&q=80"
+              alt="Rumput Manila Zoysia Matrella Sukolilo Malang"
+              class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500"
+              loading="lazy" />
+            <!-- Badge Standar Lapangan -->
+            <div
+              class="absolute top-3 left-3 bg-gradient-to-r from-teal-600 to-emerald-700 text-white font-extrabold text-xs px-3 py-1.5 rounded-full shadow-md flex items-center gap-1.5">
+              <i data-lucide="shield" class="w-3.5 h-3.5"></i>
+              <span>Standar Lapangan</span>
+            </div>
+            <!-- Format Sodet Tag -->
+            <div
+              class="absolute bottom-3 right-3 bg-stone-900/80 backdrop-blur-sm text-stone-100 text-[11px] font-semibold px-2.5 py-1 rounded-md">
+              Sodet Lempeng 1m²
+            </div>
+          </div>
+
+          <!-- Card Content -->
+          <div class="p-6 flex-1 flex flex-col justify-between space-y-5">
+            <div>
+              <div class="flex items-baseline justify-between mb-1">
+                <h3 class="text-xl font-bold text-stone-900">Rumput Manila</h3>
+                <span class="text-xs text-teal-800 font-semibold bg-teal-50 px-2 py-0.5 rounded-md">Zoysia
+                  Matrella</span>
+              </div>
+              <p class="text-xs text-stone-500 italic mb-3">Zoysia matrella</p>
+              <p class="text-xs text-stone-600 leading-relaxed">
+                Akar sangat dalam mencengkeram tanah, elastisitas tinggi, tahan pijakan berat, dan daya regenerasi
+                sangat cepat.
+              </p>
+
+              <!-- Fitur & Kebutuhan Cahaya -->
+              <div class="mt-4 space-y-2 border-t border-stone-100 pt-3">
+                <div class="flex items-center justify-between text-xs">
+                  <span class="text-stone-500 flex items-center gap-1.5">
+                    <i data-lucide="sun" class="w-3.5 h-3.5 text-amber-500"></i> Sinar Matahari:
+                  </span>
+                  <span class="font-bold text-stone-800 bg-amber-50 text-amber-800 px-2 py-0.5 rounded">Full Sun (Tahan
+                    Terik)</span>
+                </div>
+                <div class="flex items-center justify-between text-xs">
+                  <span class="text-stone-500 flex items-center gap-1.5">
+                    <i data-lucide="footprints" class="w-3.5 h-3.5 text-emerald-600"></i> Tahan Injakan:
+                  </span>
+                  <span class="font-bold text-emerald-800">Sangat Tinggi</span>
+                </div>
+                <div class="flex items-center justify-between text-xs">
+                  <span class="text-stone-500 flex items-center gap-1.5">
+                    <i data-lucide="home" class="w-3.5 h-3.5 text-emerald-600"></i> Cocok Untuk:
+                  </span>
+                  <span class="font-semibold text-stone-700">Stadion, Play area, Lereng</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Action Button -->
+            <div class="pt-2">
+              <button onclick="pesanProduk('Rumput Manila / Zoysia Matrella')"
+                class="w-full inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white text-xs sm:text-sm font-bold py-3 px-4 rounded-xl shadow-md shadow-emerald-600/20 hover:shadow-emerald-600/35 transition-all">
+                <i data-lucide="message-circle" class="w-4 h-4"></i>
+                <span>Pesan Rumput Ini via WA</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Informasi Tambahan Pembelian -->
+      <div
+        class="mt-12 bg-white rounded-2xl p-6 sm:p-8 border border-stone-200 flex flex-col md:flex-row items-center justify-between gap-6">
+        <div class="flex items-start gap-4">
+          <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center shrink-0">
+            <i data-lucide="truck" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <h4 class="text-base font-bold text-stone-900">Butuh Jenis Rumput Lain atau Pesanan Partai Proyek?</h4>
+            <p class="text-sm text-stone-600">Kami juga melayani Rumput Swiss, Rumput Gajah Biasa/Paitan, serta suplay
+              ribuan meter persegi untuk lapangan bola & taman perumahan.</p>
+          </div>
+        </div>
+        <button onclick="hubungiWaGeneral()"
+          class="shrink-0 inline-flex items-center gap-2 bg-stone-900 hover:bg-stone-800 text-white text-sm font-bold px-6 py-3 rounded-xl transition-colors">
+          <span>Tanya Stok Lain ke Petani</span>
+          <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ======================================================== -->
+  <!-- 4. PROFIL PERUSAHAAN (CV. DUTA RUMPUT MANDIRI)            -->
+  <!-- ======================================================== -->
+  <section id="profil" class="py-20 bg-emerald-950 text-white relative overflow-hidden">
+    <!-- Glow Background Accents -->
+    <div class="absolute -bottom-32 -left-32 w-96 h-96 bg-emerald-600/15 rounded-full blur-3xl pointer-events-none">
+    </div>
+    <div class="absolute -top-32 -right-32 w-96 h-96 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+
+      <!-- Header Section -->
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+        <div
+          class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-900/90 border border-emerald-500/40 text-emerald-300 text-xs font-bold uppercase tracking-wider">
+          <i data-lucide="building-2" class="w-3.5 h-3.5 text-amber-400"></i>
+          Profil Resmi CV. DUTA RUMPUT MANDIRI
+        </div>
+        <h2 class="text-3xl sm:text-4xl lg:text-4xl font-extrabold text-white tracking-tight leading-tight">
+          Sentra Budidaya Rumput Terbesar & Kontraktor Lanskap Terpercaya
+        </h2>
+        <p class="text-emerald-100/80 text-sm sm:text-base leading-relaxed">
+          Mengintegrasikan dedikasi ratusan petani asli Desa Sukolilo, Wajak dengan manajemen berbadan hukum resmi. Kami
+          memberikan kepastian legalitas, pasokan stabil, dan jaminan harga petani langsung tanpa calo.
+        </p>
+      </div>
+
+      <!-- Main Profile Grid: Cerita Usaha & Legalitas (Left) + Statistik & Sertifikasi (Right) -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch mb-14">
+
+        <!-- Kolom Kiri: Tentang Usaha & Legalitas (7 Cols) -->
+        <div
+          class="lg:col-span-7 bg-stone-900/90 backdrop-blur-md rounded-3xl p-7 sm:p-9 border border-emerald-500/30 shadow-2xl flex flex-col justify-between">
+          <div class="space-y-6">
+            <div class="flex items-center gap-3 border-b border-emerald-800/60 pb-5">
+              <div
+                class="w-12 h-12 rounded-2xl bg-gradient-to-tr from-emerald-600 to-amber-500 flex items-center justify-center text-white shadow-lg shrink-0">
+                <i data-lucide="shield-check" class="w-6 h-6"></i>
+              </div>
+              <div>
+                <h3 class="text-xl font-bold text-white tracking-tight">CV. DUTA RUMPUT MANDIRI</h3>
+                <p class="text-xs text-emerald-400 font-medium">Badan Usaha Resmi Pembudidaya & Kontraktor Rumput Hias
+                  Malang</p>
+              </div>
+            </div>
+
+            <p class="text-stone-300 text-sm sm:text-base leading-relaxed">
+              Berpusat di <strong>Desa Sukolilo (Dusun Napel), Kecamatan Wajak, Kabupaten Malang</strong>, <strong>CV.
+                DUTA RUMPUT MANDIRI</strong> lahir dari komitmen untuk menghadirkan suplai rumput taman unggulan
+              langsung dari sumber tanah subur lereng Semeru. Kami bertransformasi menjadi badan usaha resmi untuk
+              memberikan rasa aman dan kemudahan bagi pemilik rumah tinggal, arsitek lanskap, hingga kontraktor
+              BUMN/Swasta yang membutuhkan kepastian mutu bibit, faktur resmi, dan kontinuitas suplai.
+            </p>
+
+            <!-- Legalitas & Keamanan Transaksi -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5 pt-2">
+              <div class="bg-stone-950/70 p-3.5 rounded-xl border border-emerald-900/60 flex items-start gap-3">
+                <i data-lucide="file-check" class="w-5 h-5 text-amber-400 shrink-0 mt-0.5"></i>
+                <div>
+                  <h4 class="text-xs font-bold text-white">Legalitas Badan Usaha Resmi</h4>
+                  <p class="text-[11px] text-stone-400 mt-0.5">Berbadan hukum CV terdaftar, memiliki NIB aktif dan
+                    rekening bank operasional resmi.</p>
+                </div>
+              </div>
+
+              <div class="bg-stone-950/70 p-3.5 rounded-xl border border-emerald-900/60 flex items-start gap-3">
+                <i data-lucide="receipt" class="w-5 h-5 text-amber-400 shrink-0 mt-0.5"></i>
+                <div>
+                  <h4 class="text-xs font-bold text-white">Dokumen Proyek Lengkap</h4>
+                  <p class="text-[11px] text-stone-400 mt-0.5">Siap menerbitkan SPK, Invoice resmi, Kwitansi bermaterai,
+                    dan Surat Dukungan Tender.</p>
+                </div>
+              </div>
+
+              <div class="bg-stone-950/70 p-3.5 rounded-xl border border-emerald-900/60 flex items-start gap-3">
+                <i data-lucide="badge-percent" class="w-5 h-5 text-amber-400 shrink-0 mt-0.5"></i>
+                <div>
+                  <h4 class="text-xs font-bold text-white">Harga Petani Murni</h4>
+                  <p class="text-[11px] text-stone-400 mt-0.5">Beli langsung dari hamparan tanah, tanpa komisi perantara
+                    / makelar hingga 30%.</p>
+                </div>
+              </div>
+
+              <div class="bg-stone-950/70 p-3.5 rounded-xl border border-emerald-900/60 flex items-start gap-3">
+                <i data-lucide="shield-alert" class="w-5 h-5 text-amber-400 shrink-0 mt-0.5"></i>
+                <div>
+                  <h4 class="text-xs font-bold text-white">Garansi Kualitas & Penggantian</h4>
+                  <p class="text-[11px] text-stone-400 mt-0.5">Jaminan penggantian lempengan bila ada kerusakan fatal
+                    atau patah selama perjalanan ekspedisi.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CTA Konsultasi Perusahaan -->
+          <div
+            class="pt-6 mt-6 border-t border-emerald-800/60 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div class="text-xs text-stone-400 text-center sm:text-left">
+              Butuh surat penawaran harga resmi (RAB/Invoice) untuk instansi atau proyek Anda?
+            </div>
+            <button onclick="hubungiWaGeneral()"
+              class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 text-white font-bold text-xs sm:text-sm px-5 py-2.5 rounded-xl shadow-lg shadow-emerald-900/50 transition-all shrink-0">
+              <i data-lucide="file-text" class="w-4 h-4"></i>
+              <span>Minta Penawaran Resmi</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Kolom Kanan: 4 Metrik Kunci & Kapasitas Armada (5 Cols) -->
+        <div class="lg:col-span-5 flex flex-col gap-4">
+
+          <!-- Grid 4 Angka Kredibilitas -->
+          <div class="grid grid-cols-2 gap-4">
+
+            <div class="bg-stone-900/80 rounded-2xl p-5 border border-emerald-500/30 text-center sm:text-left">
+              <div class="text-3xl sm:text-4xl font-black text-amber-400 mb-1">50+ <span
+                  class="text-lg font-bold text-emerald-300">Ha</span></div>
+              <div class="text-xs font-bold text-white uppercase tracking-wider">Lahan Budidaya</div>
+              <p class="text-[11px] text-stone-400 mt-1">Hamparan kebun binaan terluas di Sukolilo Wajak Malang.</p>
+            </div>
+
+            <div class="bg-stone-900/80 rounded-2xl p-5 border border-emerald-500/30 text-center sm:text-left">
+              <div class="text-3xl sm:text-4xl font-black text-emerald-400 mb-1">10+ <span
+                  class="text-lg font-bold text-emerald-300">Thn</span></div>
+              <div class="text-xs font-bold text-white uppercase tracking-wider">Pengalaman</div>
+              <p class="text-[11px] text-stone-400 mt-1">Dedikasi puluhan tahun merawat & menyodet rumput berkualitas.
+              </p>
+            </div>
+
+            <div class="bg-stone-900/80 rounded-2xl p-5 border border-emerald-500/30 text-center sm:text-left">
+              <div class="text-3xl sm:text-4xl font-black text-amber-400 mb-1">5.000 <span
+                  class="text-lg font-bold text-emerald-300">m²</span></div>
+              <div class="text-xs font-bold text-white uppercase tracking-wider">Kapasitas Harian</div>
+              <p class="text-[11px] text-stone-400 mt-1">Kemampuan sodet & kirim harian untuk proyek skala masif.</p>
+            </div>
+
+            <div class="bg-stone-900/80 rounded-2xl p-5 border border-emerald-500/30 text-center sm:text-left">
+              <div class="text-3xl sm:text-4xl font-black text-emerald-400 mb-1">100%</div>
+              <div class="text-xs font-bold text-white uppercase tracking-wider">Segar Baru Sodet</div>
+              <p class="text-[11px] text-stone-400 mt-1">Panen langsung saat pesanan masuk, tanah tebal akar kuat.</p>
+            </div>
+
+          </div>
+
+          <!-- Banner Fasilitas & Armada Mandiri -->
+          <div
+            class="bg-gradient-to-br from-emerald-900/80 to-stone-900 rounded-2xl p-6 border border-emerald-500/40 text-white flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-2 text-xs font-bold text-amber-300 uppercase tracking-wider mb-2">
+                <i data-lucide="truck" class="w-4 h-4"></i>
+                <span>Distribusi & Armada Milik Sendiri</span>
+              </div>
+              <h4 class="text-lg font-bold text-white mb-2">Jaminan Tepat Waktu Tanpa Rusak di Jalan</h4>
+              <p class="text-xs text-stone-300 leading-relaxed mb-4">
+                Didukung armada operasional mandiri sehingga pengiriman bisa diatur fleksibel sesuai jam kerja proyek
+                atau waktu luang pemilik rumah tanpa ketergantungan pihak ketiga.
+              </p>
+            </div>
+
+            <div class="grid grid-cols-3 gap-2 text-center pt-3 border-t border-emerald-800/60">
+              <div class="p-2.5 bg-emerald-950/60 rounded-xl border border-emerald-800/40">
+                <div class="text-xs font-bold text-emerald-300">Pickup L300</div>
+                <div class="text-[10px] text-stone-400 mt-0.5">Kapasitas s/d 60 m²</div>
+              </div>
+              <div class="p-2.5 bg-emerald-950/60 rounded-xl border border-emerald-800/40">
+                <div class="text-xs font-bold text-emerald-300">Truk Engkel</div>
+                <div class="text-[10px] text-stone-400 mt-0.5">Kapasitas 70 - 200 m²</div>
+              </div>
+              <div class="p-2.5 bg-emerald-950/60 rounded-xl border border-emerald-800/40">
+                <div class="text-xs font-bold text-emerald-300">Truk CDD</div>
+                <div class="text-[10px] text-stone-400 mt-0.5">Kapasitas 200 - 500+ m²</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Alasan Utama Memilih CV. DUTA RUMPUT MANDIRI (Pertimbangan Calon Pembeli) -->
+      <div class="bg-stone-900/90 rounded-3xl p-8 sm:p-10 border border-emerald-500/30">
+        <div class="text-center max-w-2xl mx-auto mb-10">
+          <div class="inline-flex items-center gap-1.5 text-xs text-amber-400 uppercase tracking-widest font-bold mb-1">
+            <i data-lucide="sparkles" class="w-3.5 h-3.5"></i>
+            Mengapa Memilih Kami?
+          </div>
+          <h3 class="text-2xl sm:text-3xl font-bold text-white tracking-tight">4 Pertimbangan Utama Membeli di CV. DUTA
+            RUMPUT MANDIRI</h3>
+          <p class="text-xs sm:text-sm text-stone-400 mt-2">Perbandingan nyata yang menjadikan kami mitra suplai rumput
+            taman nomor 1 bagi perorangan maupun korporasi</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+          <div
+            class="p-6 rounded-2xl bg-stone-950/70 border border-emerald-900/50 hover:border-emerald-500/50 transition-colors">
+            <div
+              class="w-11 h-11 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-black text-lg mb-4">
+              01
+            </div>
+            <h4 class="text-base font-bold text-white mb-2">Bukan Makelar / Calo</h4>
+            <p class="text-xs text-stone-400 leading-relaxed">
+              Anda bertransaksi langsung dengan pemilik kebun budidaya Sukolilo Wajak. Tidak ada selisih biaya komisi
+              calo dan konfirmasi ketersediaan stok panen selalu akurat real-time.
+            </p>
+          </div>
+
+          <div
+            class="p-6 rounded-2xl bg-stone-950/70 border border-emerald-900/50 hover:border-emerald-500/50 transition-colors">
+            <div
+              class="w-11 h-11 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center font-black text-lg mb-4">
+              02
+            </div>
+            <h4 class="text-base font-bold text-white mb-2">Lempengan Tanah Tebal</h4>
+            <p class="text-xs text-stone-400 leading-relaxed">
+              Teknik sodetan profesional kami mempertahankan lapisan tanah subur pada perakaran rumput. Rumput tidak
+              mudah stres, tidak menguning di jalan, dan cepat mengikat tanah baru.
+            </p>
+          </div>
+
+          <div
+            class="p-6 rounded-2xl bg-stone-950/70 border border-emerald-900/50 hover:border-emerald-500/50 transition-colors">
+            <div
+              class="w-11 h-11 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-black text-lg mb-4">
+              03
+            </div>
+            <h4 class="text-base font-bold text-white mb-2">Layanan Tanam Bergaransi</h4>
+            <p class="text-xs text-stone-400 leading-relaxed">
+              Ingin terima beres tanpa repot? Tim petani kami siap datang mengolah tanah, membuang puing, memupuk
+              kompos, hingga memasang rumput dengan jaminan hidup subur & rapi.
+            </p>
+          </div>
+
+          <div
+            class="p-6 rounded-2xl bg-stone-950/70 border border-emerald-900/50 hover:border-emerald-500/50 transition-colors">
+            <div
+              class="w-11 h-11 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center font-black text-lg mb-4">
+              04
+            </div>
+            <h4 class="text-base font-bold text-white mb-2">Pengiriman Cepat & Aman</h4>
+            <p class="text-xs text-stone-400 leading-relaxed">
+              Penyusunan lempengan rumput di bak armada ditata berlapis secara khusus agar sirkulasi udara terjaga dan
+              rumput tidak panas selama perjalanan ke lokasi proyek Anda.
+            </p>
+          </div>
+
+        </div>
+
+        <!-- Portofolio & Kepercayaan Sektor -->
+        <div
+          class="mt-10 pt-7 border-t border-emerald-900/60 flex flex-wrap items-center justify-center gap-4 sm:gap-8 text-xs text-stone-400">
+          <span class="font-semibold text-emerald-300">Telah Dipercaya Untuk:</span>
+          <span class="flex items-center gap-1.5"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400"></i>
+            Taman Rumah Tinggal & Cluster Mewah</span>
+          <span class="flex items-center gap-1.5"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400"></i>
+            Developer Perumahan Nasional</span>
+          <span class="flex items-center gap-1.5"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400"></i>
+            Lapangan Sepak Bola & Mini Soccer</span>
+          <span class="flex items-center gap-1.5"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400"></i>
+            Villa, Hotel & Resort Wisata Batu-Malang</span>
+          <span class="flex items-center gap-1.5"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400"></i>
+            Kawasan Pabrik & Fasilitas Publik</span>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ======================================================== -->
+  <!-- 5. VALUE PROPOSITION (KEUNGGULAN PETANI SUKOLILO WAJAK)   -->
+  <!-- ======================================================== -->
+  <section id="keunggulan" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+        <div
+          class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold uppercase tracking-wider">
+          <i data-lucide="check-check" class="w-3.5 h-3.5"></i>
+          Keunggulan Petani Sukolilo Wajak
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-stone-900 tracking-tight">
+          Kenapa Harus Beli Langsung Dari Petani Sukolilo?
+        </h2>
+        <p class="text-stone-600 text-base leading-relaxed">
+          Kecamatan Wajak, Kabupaten Malang dikenal sebagai sentra budidaya rumput hias terbaik di Jawa Timur. Tanah
+          vulkanik subur lereng Bromo dan air jernih menghasilkan rumput dengan kualitas prima.
+        </p>
+      </div>
+
+      <!-- 3 Pilar Utama -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+        <!-- PILAR 1 -->
+        <div
+          class="bg-stone-50 rounded-3xl p-8 border border-stone-200/80 hover:border-emerald-500/50 transition-all duration-300 hover:shadow-xl group">
+          <div
+            class="w-14 h-14 rounded-2xl bg-emerald-600 text-white flex items-center justify-center mb-6 shadow-md shadow-emerald-600/30 group-hover:scale-110 transition-transform">
+            <i data-lucide="leaf" class="w-7 h-7"></i>
+          </div>
+          <div class="inline-block px-2.5 py-1 rounded-md bg-emerald-100 text-emerald-800 font-bold text-xs mb-3">
+            Pilar 1: Kualitas Segar
+          </div>
+          <h3 class="text-xl font-bold text-stone-900 mb-3">Dipanen Segar Tiap Order</h3>
+          <p class="text-stone-600 text-sm leading-relaxed mb-4">
+            Rumput <strong>TIDAK MENGUNING</strong> atau mengering karena tidak pernah mengendap di gudang. Kami baru
+            menyodet rumput dari tanah hamparan kebun beberapa jam sebelum jadwal armada berangkat.
+          </p>
+          <ul class="text-xs text-stone-600 space-y-2 border-t border-stone-200/60 pt-4">
+            <li class="flex items-center gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-emerald-600 shrink-0"></i>
+              <span>Akar rumput masih mengikat tanah basah</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-emerald-600 shrink-0"></i>
+              <span>Tingkat keberhasilan hidup pasca tanam >98%</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- PILAR 2 -->
+        <div
+          class="bg-stone-50 rounded-3xl p-8 border border-stone-200/80 hover:border-emerald-500/50 transition-all duration-300 hover:shadow-xl group">
+          <div
+            class="w-14 h-14 rounded-2xl bg-amber-500 text-stone-950 flex items-center justify-center mb-6 shadow-md shadow-amber-500/30 group-hover:scale-110 transition-transform">
+            <i data-lucide="truck" class="w-7 h-7"></i>
+          </div>
+          <div class="inline-block px-2.5 py-1 rounded-md bg-amber-100 text-amber-800 font-bold text-xs mb-3">
+            Pilar 2: Distribusi Mandiri
+          </div>
+          <h3 class="text-xl font-bold text-stone-900 mb-3">Armada Pengiriman Siap</h3>
+          <p class="text-stone-600 text-sm leading-relaxed mb-4">
+            Memiliki fleksibilitas armada milik sendiri untuk melayani pesanan berapapun ukurannya: mulai dari
+            <strong>Pickup L300</strong> (taman rumah), <strong>Truk Engkel</strong>, hingga <strong>CDD</strong> untuk
+            ribuan meter partai proyek.
+          </p>
+          <ul class="text-xs text-stone-600 space-y-2 border-t border-stone-200/60 pt-4">
+            <li class="flex items-center gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-emerald-600 shrink-0"></i>
+              <span>Pengiriman langsung dari kebun ke halaman</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-emerald-600 shrink-0"></i>
+              <span>Penyusunan sodetan rapi tidak mudah pecah</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- PILAR 3 -->
+        <div
+          class="bg-stone-50 rounded-3xl p-8 border border-stone-200/80 hover:border-emerald-500/50 transition-all duration-300 hover:shadow-xl group">
+          <div
+            class="w-14 h-14 rounded-2xl bg-emerald-800 text-white flex items-center justify-center mb-6 shadow-md shadow-emerald-800/30 group-hover:scale-110 transition-transform">
+            <i data-lucide="users" class="w-7 h-7"></i>
+          </div>
+          <div class="inline-block px-2.5 py-1 rounded-md bg-stone-200 text-stone-800 font-bold text-xs mb-3">
+            Pilar 3: Layanan Lengkap
+          </div>
+          <h3 class="text-xl font-bold text-stone-900 mb-3">Tenaga Tanam Berpengalaman</h3>
+          <p class="text-stone-600 text-sm leading-relaxed mb-4">
+            Tersedia tim tukang taman spesialis petani yang terlatih dalam pengolahan tanah awal, perataan kontur,
+            pemberian pupuk dasar organik, dan penataan sodetan dengan kerapatan presisi.
+          </p>
+          <ul class="text-xs text-stone-600 space-y-2 border-t border-stone-200/60 pt-4">
+            <li class="flex items-center gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-emerald-600 shrink-0"></i>
+              <span>Hasil tanam langsung rapi dan rapat</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <i data-lucide="check" class="w-4 h-4 text-emerald-600 shrink-0"></i>
+              <span>Gratis konsultasi perawatan awal pasca tanam</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ======================================================== -->
+  <!-- 6. PROSES PEMESANAN                                       -->
+  <!-- ======================================================== -->
+  <section id="proses" class="py-16 bg-stone-100 border-y border-stone-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <h3 class="text-2xl font-bold text-stone-900">Alur Pemesanan Mudah & Cepat</h3>
+        <p class="text-stone-600 text-sm mt-1">Hanya dalam 4 langkah, rumput segar siap menghijaukan halaman Anda</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+        <!-- Step 1 -->
+        <div class="bg-white p-6 rounded-2xl border border-stone-200 relative">
+          <div class="text-3xl font-black text-emerald-100 mb-2">01</div>
+          <h4 class="text-base font-bold text-stone-900 mb-1">Konsultasi Ukuran & Jenis</h4>
+          <p class="text-xs text-stone-600 leading-relaxed">
+            Sampaikan perkiraan ukuran lahan dan varietas rumput yang Anda butuhkan langsung ke tim kami via WhatsApp.
+          </p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="bg-white p-6 rounded-2xl border border-stone-200 relative">
+          <div class="text-3xl font-black text-emerald-100 mb-2">02</div>
+          <h4 class="text-base font-bold text-stone-900 mb-1">Penodetan Segar di Kebun</h4>
+          <p class="text-xs text-stone-600 leading-relaxed">
+            Petani menyodet rumput langsung dari hamparan tanah Sukolilo sesuai jumlah order Anda.
+          </p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="bg-white p-6 rounded-2xl border border-stone-200 relative">
+          <div class="text-3xl font-black text-emerald-100 mb-2">03</div>
+          <h4 class="text-base font-bold text-stone-900 mb-1">Pengiriman Cepat Armada</h4>
+          <p class="text-xs text-stone-600 leading-relaxed">
+            Rumput dimuat rapi ke armada (Pickup/Truk) dan dikirim langsung ke alamat rumah atau lokasi proyek.
+          </p>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="bg-white p-6 rounded-2xl border border-stone-200 relative">
+          <div class="text-3xl font-black text-emerald-100 mb-2">04</div>
+          <h4 class="text-base font-bold text-stone-900 mb-1">Pemasangan & Perawatan</h4>
+          <p class="text-xs text-stone-600 leading-relaxed">
+            Pemasangan rapi oleh tim ahli kami (jika memilih paket pasang), disiram dan diberi panduan perawatan.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ======================================================== -->
+  <!-- 7. FAQ (TANYA JAWAB UMUM)                                 -->
+  <!-- ======================================================== -->
+  <section class="py-16 bg-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <div class="text-center mb-12">
+        <h3 class="text-2xl sm:text-3xl font-bold text-stone-900">Pertanyaan yang Sering Diajukan</h3>
+        <p class="text-stone-600 text-sm mt-1">Semua hal yang perlu Anda ketahui sebelum memesan</p>
+      </div>
+
+      <div class="space-y-4" id="faqAccordion">
+
+        <!-- FAQ 1 -->
+        <div class="border border-stone-200 rounded-2xl overflow-hidden">
+          <button
+            class="faq-toggle w-full px-6 py-4 text-left font-bold text-stone-900 flex justify-between items-center bg-stone-50 hover:bg-stone-100 transition-colors">
+            <span>Apakah melayani pesanan partai kecil / eceran untuk rumah tinggal?</span>
+            <i data-lucide="chevron-down" class="w-5 h-5 text-emerald-700 transition-transform"></i>
+          </button>
+          <div
+            class="faq-content hidden px-6 py-4 text-sm text-stone-600 border-t border-stone-100 bg-white leading-relaxed">
+            Tentu saja! Kami melayani mulai dari luasan kecil untuk halaman depan rumah (10 - 20 m²) hingga proyek besar
+            ribuan meter persegi untuk lapangan bola, perumahan, atau resort.
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="border border-stone-200 rounded-2xl overflow-hidden">
+          <button
+            class="faq-toggle w-full px-6 py-4 text-left font-bold text-stone-900 flex justify-between items-center bg-stone-50 hover:bg-stone-100 transition-colors">
+            <span>Berapa lama rumput bertahan di perjalanan saat dikirim?</span>
+            <i data-lucide="chevron-down" class="w-5 h-5 text-emerald-700 transition-transform"></i>
+          </button>
+          <div
+            class="faq-content hidden px-6 py-4 text-sm text-stone-600 border-t border-stone-100 bg-white leading-relaxed">
+            Karena rumput disodet dengan ketebalan tanah yang cukup dan akar masih basah, rumput mampu bertahan segar
+            selama 2-3 hari dalam perjalanan darat. Untuk wilayah Jawa Timur, pengiriman biasanya sampai di hari yang
+            sama atau esok paginya.
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="border border-stone-200 rounded-2xl overflow-hidden">
+          <button
+            class="faq-toggle w-full px-6 py-4 text-left font-bold text-stone-900 flex justify-between items-center bg-stone-50 hover:bg-stone-100 transition-colors">
+            <span>Apa beda utama Rumput Jepang dan Rumput Gajah Mini?</span>
+            <i data-lucide="chevron-down" class="w-5 h-5 text-emerald-700 transition-transform"></i>
+          </button>
+          <div
+            class="faq-content hidden px-6 py-4 text-sm text-stone-600 border-t border-stone-100 bg-white leading-relaxed">
+            Rumput Jepang memiliki daun halus, lancip, rapat dan membutuhkan sinar matahari penuh (100%). Sedangkan
+            Rumput Gajah Mini memiliki daun oval membulat, lebih tahan terhadap area teduh (semi-shade 50%), dan jarang
+            memerlukan pemotongan karena tumbuhnya merambat.
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="border border-stone-200 rounded-2xl overflow-hidden">
+          <button
+            class="faq-toggle w-full px-6 py-4 text-left font-bold text-stone-900 flex justify-between items-center bg-stone-50 hover:bg-stone-100 transition-colors">
+            <span>Bagaimana perawatan rumput setelah baru dipasang?</span>
+            <i data-lucide="chevron-down" class="w-5 h-5 text-emerald-700 transition-transform"></i>
+          </button>
+          <div
+            class="faq-content hidden px-6 py-4 text-sm text-stone-600 border-t border-stone-100 bg-white leading-relaxed">
+            Pada 2 minggu pertama (fase adaptasi perakaran), rumput wajib disiram secara rutin 2 kali sehari (pagi dan
+            sore) sampai tanah benar-benar basah. Hindari injakan berlebih selama 14 hari pertama. Setelah akar mengikat
+            kuat, penyiraman cukup 1 kali sehari.
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ======================================================== -->
+  <!-- 8. FOOTER & KONTAK                                       -->
+  <!-- ======================================================== -->
+  <footer id="kontak" class="bg-forest-950 text-stone-300 pt-16 pb-10 border-t border-emerald-950">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <!-- Top Footer Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-emerald-900/40">
+
+        <!-- Col 1: Profil Usaha (4 Cols) -->
+        <div class="lg:col-span-4 space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-xl bg-emerald-600 flex items-center justify-center text-white">
+              <i data-lucide="sprout" class="w-5 h-5 text-emerald-200"></i>
+            </div>
+            <div>
+              <span class="text-lg font-bold text-white tracking-tight">DutaRumput<span
+                  class="text-emerald-400">Mandiri</span></span>
+              <p class="text-[11px] text-emerald-300">CV. DUTA RUMPUT MANDIRI</p>
+            </div>
+          </div>
+          <p class="text-xs text-stone-400 leading-relaxed">
+            Pusat budidaya, penodetan, dan suplai rumput taman hias langsung dari petani Desa Sukolilo (Napel),
+            Kecamatan Wajak, Kabupaten Malang. Komitmen kami adalah rumput selalu segar, akar kuat, dan harga bersahabat
+            langsung dari kebun.
+          </p>
+          <div class="pt-2 flex items-center gap-2 text-xs text-amber-400 font-semibold">
+            <i data-lucide="shield-check" class="w-4 h-4"></i>
+            <span>Garansi Kualitas Segar Baru Panen</span>
+          </div>
+        </div>
+
+        <!-- Col 2: Katalog Cepat (2 Cols) -->
+        <div class="lg:col-span-2 space-y-3">
+          <h4 class="text-sm font-bold text-white uppercase tracking-wider">Katalog Rumput</h4>
+          <ul class="text-xs space-y-2.5 text-stone-400">
+            <li><a href="javascript:void(0)" onclick="pesanProduk('Rumput Jepang / Peking')"
+                class="hover:text-emerald-400 transition-colors">Rumput Jepang (Peking)</a></li>
+            <li><a href="javascript:void(0)" onclick="pesanProduk('Rumput Gajah Mini')"
+                class="hover:text-emerald-400 transition-colors">Rumput Gajah Mini</a></li>
+            <li><a href="javascript:void(0)" onclick="pesanProduk('Rumput Golf / Babat')"
+                class="hover:text-emerald-400 transition-colors">Rumput Golf (Babat)</a></li>
+            <li><a href="javascript:void(0)" onclick="pesanProduk('Rumput Manila / Zoysia Matrella')"
+                class="hover:text-emerald-400 transition-colors">Rumput Manila (Zoysia)</a></li>
+            <li><a href="javascript:void(0)" onclick="pesanProduk('Rumput Swiss & Varietas Lain')"
+                class="hover:text-emerald-400 transition-colors">Rumput Swiss & Lainnya</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Layanan Kami (3 Cols) -->
+        <div class="lg:col-span-3 space-y-3">
+          <h4 class="text-sm font-bold text-white uppercase tracking-wider">Layanan Tersedia</h4>
+          <ul class="text-xs space-y-2.5 text-stone-400">
+            <li class="flex items-start gap-2">
+              <i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5"></i>
+              <span>Suplai Eceran Taman Rumah</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5"></i>
+              <span>Suplai Proyek Skala Besar & Lapangan</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5"></i>
+              <span>Jasa Olah Tanah, Perataan & Pemupukan</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5"></i>
+              <span>Tenaga Tanam Rapi & Bergaransi</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5"></i>
+              <span>Pengadaan Tanah Taman & Pupuk Kandang</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Alamat & Kontak (3 Cols) -->
+        <div class="lg:col-span-3 space-y-3">
+          <h4 class="text-sm font-bold text-white uppercase tracking-wider">Alamat & Kebun Budidaya</h4>
+          <div class="space-y-3 text-xs text-stone-400">
+            <div class="flex items-start gap-2.5">
+              <i data-lucide="map-pin" class="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"></i>
+              <span>Desa Sukolilo (Dusun Napel), Kec. Wajak, Kabupaten Malang, Jawa Timur 65173</span>
+            </div>
+            <div class="flex items-center gap-2.5">
+              <i data-lucide="phone" class="w-4 h-4 text-emerald-400 shrink-0"></i>
+              <span id="displayNomorWa" class="font-mono text-emerald-300 font-bold">+62 812-3456-7890</span>
+            </div>
+            <div class="flex items-center gap-2.5">
+              <i data-lucide="clock" class="w-4 h-4 text-emerald-400 shrink-0"></i>
+              <span>Layanan Panen: Setiap Hari (06.00 - 18.00 WIB)</span>
+            </div>
+          </div>
+          <div class="pt-2">
+            <button onclick="hubungiWaGeneral()"
+              class="w-full inline-flex items-center justify-center gap-2 bg-emerald-700 hover:bg-emerald-600 text-white text-xs font-bold py-2.5 px-4 rounded-xl transition-colors">
+              <i data-lucide="message-circle" class="w-4 h-4"></i>
+              <span>Chat WhatsApp Penjual</span>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom Copyright -->
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-stone-500">
+        <div>
+          © 2026 CV. DUTA RUMPUT MANDIRI - Petani Rumput Sukolilo Wajak, Malang. All rights reserved.
+        </div>
+        <div class="flex items-center gap-4">
+          <span class="text-stone-400">Sentra Rumput Hias Terlengkap Jawa Timur</span>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+
+  <!-- ======================================================== -->
+  <!-- 9. FLOATING WHATSAPP BUTTON (POJOK KANAN BAWAH)           -->
+  <!-- ======================================================== -->
+  <div class="fixed bottom-6 right-6 z-50 flex items-center gap-3">
+    <!-- Tooltip badge -->
+    <div
+      class="hidden sm:flex items-center bg-stone-900/90 text-white text-xs font-bold px-3 py-1.5 rounded-full shadow-lg border border-emerald-500/30 backdrop-blur-sm">
+      <span class="w-2 h-2 rounded-full bg-emerald-400 inline-block mr-2 animate-ping"></span>
+      Tanya Petani Langsung
+    </div>
+
+    <!-- The Floating Button -->
+    <a id="floatingWaBtn" href="javascript:void(0)" onclick="hubungiWaGeneral()"
+      class="wa-pulse w-14 h-14 rounded-full bg-[#25D366] hover:bg-[#20bd5a] text-white flex items-center justify-center shadow-2xl transition-transform hover:scale-110 focus:outline-none"
+      title="Hubungi Petani Sukolilo via WhatsApp" aria-label="Chat WhatsApp">
+      <!-- WhatsApp Custom SVG for crisp look -->
+      <svg class="w-8 h-8 fill-current" viewBox="0 0 24 24">
+        <path
+          d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-5.795 1.528zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
+      </svg>
+    </a>
+  </div>
+
+
+  <!-- ======================================================== -->
+  <!-- 10. JAVASCRIPT LOGIC                                      -->
+  <!-- ======================================================== -->
+  <script>
+    /**
+     * KONFIGURASI NOMOR WHATSAPP PENJUAL
+     * Ubah nomor di bawah ini sesuai nomor aktif WhatsApp penjual rumput Sukolilo.
+     * Gunakan format kode negara tanpa spasi atau tanda plus (contoh: "6281234567890").
+     */
+    const NOMOR_WA = "6281252346295";
+
+    // Format tampilan nomor yang ramah dibaca pengguna
+    function formatNomorDisplay(numStr) {
+      if (numStr.startsWith("62")) {
+        return "+62 " + numStr.substring(2, 5) + "-" + numStr.substring(5, 9) + "-" + numStr.substring(9);
+      }
+      return numStr;
+    }
+
+    // Helper untuk membuat Link WhatsApp dengan teks terenkripsi
+    function generateWaLink(pesan) {
+      return `https://wa.me/${NOMOR_WA}?text=${encodeURIComponent(pesan.trim())}`;
+    }
+
+    // Aksi Klik WA Umum / Konsultasi Bebas
+    function hubungiWaGeneral() {
+      const pesan = `Halo CV. Duta Rumput Mandiri (Petani Sukolilo Wajak Malang),\n\nSaya ingin konsultasi mengenai ketersediaan stok rumput segar dan harga untuk kebutuhan taman saya. Mohon informasi selengkapnya. Terima kasih!`;
+      window.open(generateWaLink(pesan), "_blank");
+    }
+
+    // Aksi Pesan dari Tombol Produk di Katalog
+    function pesanProduk(namaVarietas) {
+      const pesan = `Halo CV. Duta Rumput Mandiri Sukolilo Wajak Malang,\n\nSaya tertarik untuk memesan:\n🌿 Produk: ${namaVarietas}\n\nMohon info harga per meter, ketersediaan stok panen hari ini, dan estimasi ongkir ke alamat saya. Terima kasih!`;
+      window.open(generateWaLink(pesan), "_blank");
+    }
+
+    /**
+     * INITIALIZATION & EVENT LISTENERS
+     */
+    document.addEventListener('DOMContentLoaded', function () {
+      // 1. Render Lucide Icons
+      if (typeof lucide !== 'undefined') {
+        lucide.createIcons();
+      }
+
+      // 2. Set Nomor WA Display di Footer
+      const displayNomorEl = document.getElementById('displayNomorWa');
+      if (displayNomorEl) {
+        displayNomorEl.textContent = formatNomorDisplay(NOMOR_WA);
+      }
+
+      // 3. Mobile Menu Drawer Toggle
+      const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+      const mobileMenu = document.getElementById('mobileMenu');
+      const menuIconOpen = document.getElementById('menuIconOpen');
+      const menuIconClose = document.getElementById('menuIconClose');
+
+      if (mobileMenuBtn && mobileMenu) {
+        mobileMenuBtn.addEventListener('click', function () {
+          const isClosed = mobileMenu.classList.contains('hidden');
+          if (isClosed) {
+            mobileMenu.classList.remove('hidden');
+            menuIconOpen.classList.add('hidden');
+            menuIconClose.classList.remove('hidden');
+          } else {
+            mobileMenu.classList.add('hidden');
+            menuIconOpen.classList.remove('hidden');
+            menuIconClose.classList.add('hidden');
+          }
+        });
+
+        // Tutup menu saat link mobile diklik
+        document.querySelectorAll('.mobile-nav-link').forEach(link => {
+          link.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+            menuIconOpen.classList.remove('hidden');
+            menuIconClose.classList.add('hidden');
+          });
+        });
+      }
+
+      // 4. FAQ Accordion Toggle
+      document.querySelectorAll('.faq-toggle').forEach(button => {
+        button.addEventListener('click', () => {
+          const content = button.nextElementSibling;
+          const chevron = button.querySelector('svg, i');
+          const isHidden = content.classList.contains('hidden');
+
+          // Close all open FAQs for clean accordion feel
+          document.querySelectorAll('.faq-content').forEach(c => c.classList.add('hidden'));
+          document.querySelectorAll('.faq-toggle i, .faq-toggle svg').forEach(ch => {
+            ch.style.transform = 'rotate(0deg)';
+          });
+
+          if (isHidden) {
+            content.classList.remove('hidden');
+            if (chevron) chevron.style.transform = 'rotate(180deg)';
+          }
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>
